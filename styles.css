@@ -1,0 +1,54 @@
+.carousel {
+
+    /* margin-top: 150px; */
+    margin-bottom: 50px;
+}
+
+
+.carousel-item {
+
+    height: 800px;
+    
+}
+
+.carousel-caption {
+
+    height: 450px;
+}
+
+.img-1 , .img-2 , .img-3{
+    
+    width: 100vw;
+    height: 800px;
+    
+}
+
+
+
+.carf {
+    color:white;
+    font-size:x-large; 
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    
+}
+
+h1 {
+
+    font-family: 'Pacifico', cursive;
+    color:goldenrod;
+    font-weight: bolder;
+    padding-bottom: 25px;
+}
+
+.btn {
+
+    background-color: goldenrod;
+}
+
+
+.navbar {
+
+    font-family: 'Pacifico', cursive;
+}
+

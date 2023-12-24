@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unbundl</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Sevillana&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./addtocart.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+  <!-- Searchbar -->
+
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">chocolates</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Shop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-disabled="true" href="#">Contact Us</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+<div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+    </div>
+
+    <!-- First slide -->
+
+    <div class="carousel-inner">
+      <div class="carousel-item active"> 
+        <img src="./images/chocolate-968457_1280.jpg" alt="" class="img-1">    
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-primary-color)"></rect></svg>
+        <div class="container">
+          <div class="carousel-caption text-center">
+            <h1>Indulge In Rich Flavours</h1>
+            <p class="carf">Immerse yourself in the velvety embrace of our premium dark chocolate. Each bite is a journey to decadence.</p>
+            <p><a class="btn btn-lg btn-primary btn btn-outline-success" href="#">Sign up today</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second slide -->
+
+      <div class="carousel-item">
+       <img src="./images/pexels-pixabay-65882.jpg" alt="" srcset="" class="img-2">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-primary-color)"></rect></svg>
+        <div class="container">
+          <div class="carousel-caption text-center">
+            <h1>Wholesome Elegance</h1>
+            <p class="carf">Crafted with care, our chocolates are a testament to the elegance of simplicity. Pure ingredients, pure delight.</p>
+            <p><a class="btn btn-lg btn-primary btn btn-outline-success " href="#">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Third slide -->
+
+      <div class="carousel-item">
+        <img src="./images/pexels-acharaporn-kamornboonyarush-1028714.jpg" alt="" srcset="" class="img-3">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-primary-color)"></rect></svg>
+        <div class="container">
+          <div class="carousel-caption text-center">
+            <h1>Luxury In Every Wrapper</h1>
+            <p class="carf">Unwrap a moment of luxury with our finely curated collection. Each chocolate is a celebration of refined taste and indulgence.</p>
+            <p><a class="btn btn-lg btn-primary btn btn-outline-success" href="#">Browse gallery</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Card -->
+
+  <div class="header">
+    <p class="logo">Custom Pack</p>
+    <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div>
+  </div>
+  <div class="container">
+    <div id="root"></div>
+    <div class="sidebar">
+        <div class="head"><p>My Cart</p></div>
+        <div id="cartItem">Your cart is empty</div>
+        <div class="foot">
+            <h3>Total</h3>
+            <h2 id="total">₹ 0.00</h2>
+        </div>
+    </div>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="addtocart.js"></script>
+<script src="./index.js"></script>
+
+</body>
+</html>
+
+<!-- In order to make the carousel I used the booststrap framework and edited
+   it in order to look like a chocolate brand website. Reason for choosing bootstrap
+  was simply because of the ease of access and no limitation on editing and also 
+  it is the most poplular framework/library for CSS-->
+
+  <!-- I used a existing template for the feature section and customized it to match
+    the website design, where a customer can customize the his/her personal 
+    package of their choice and the pricing of their chosen products gets 
+    updated immidiately -->
+
+  <!-- I did not add any routes for the other pages like Home , Shop , Contact us 
+    simply because I was more focused and concerned about the front end of the website and also 
+    because it would take a lot of time to customize each and every page -->
+
+  <!-- Also I wanted to make sure the assignment remains as simple as possible
+    that is why I stuck to making the website with as least  possible tools as possible -->
